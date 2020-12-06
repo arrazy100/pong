@@ -24,8 +24,8 @@ class Paddle(pygame.sprite.Sprite):
         self.rect.y -= speed
 
         # prevent paddle go out of window
-        if self.rect.y < 0:
-            self.rect.y = 0
+        if self.rect.y < 55:
+            self.rect.y = 55
 
     # go down method
     def goDown(self, speed):
